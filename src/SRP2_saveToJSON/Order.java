@@ -1,6 +1,4 @@
-package SRP2;
-
-import java.util.Scanner;
+package SRP2_saveToJSON;
 
 public class Order {
 

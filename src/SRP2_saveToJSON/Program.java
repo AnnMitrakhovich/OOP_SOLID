@@ -1,4 +1,4 @@
-package SRP2;
+package SRP2_saveToJSON;
 
 public class Program {
     public static void main(String[] args) {

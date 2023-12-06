@@ -1,4 +1,4 @@
-package SRP2;
+package SRP2_saveToJSON;
 
 import java.util.Scanner;
 

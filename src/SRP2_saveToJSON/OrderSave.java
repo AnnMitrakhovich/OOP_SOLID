@@ -1,6 +1,5 @@
-package SRP2;
+package SRP2_saveToJSON;
 
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
