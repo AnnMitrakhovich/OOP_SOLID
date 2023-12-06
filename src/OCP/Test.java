@@ -8,6 +8,5 @@ public class Test {
         System.out.println(car.getType() + " " + car.calculateAllowedSpeed());
         Vehicle bus = new Bus(100);
         System.out.println(bus.getType() + " " + bus.calculateAllowedSpeed());
-
     }
 }
