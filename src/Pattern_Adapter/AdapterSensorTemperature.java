@@ -3,20 +3,20 @@ package Pattern_Adapter;
 import java.time.LocalDateTime;
 
 public class AdapterSensorTemperature implements MeteoSensor{
-    SensorTemperature adaptee;
+    SensorTemperature adapt;
 
     public AdapterSensorTemperature(SensorTemperature adaptee) {
-        this.adaptee = adaptee;
+        this.adapt = adaptee;
     }
 
     @Override
     public int getId() {
-        return adaptee.identifier();
+        return adapt.identifier();
     }
 
     @Override
     public Float getTemperature() {
-        return (float)adaptee.temperature();
+        return (float)adapt.temperature();
     }
 
     @Override
@@ -31,9 +31,9 @@ public class AdapterSensorTemperature implements MeteoSensor{
 
     @Override
     public LocalDateTime getDateTime() {
-        LocalDateTime dateTime = LocalDateTime.of(adaptee.year(), 1,1,0,0);
-        dateTime = dateTime.plusDays(adaptee.day() - 1);
-        dateTime = dateTime.plusSeconds(adaptee.second());
+        LocalDateTime dateTime = LocalDateTime.of(adapt.year(), 1,1,0,0);
+        dateTime = dateTime.plusDays(adapt.day() - 1);
+        dateTime = dateTime.plusSeconds(adapt.second());
         return dateTime;
     }
 }
